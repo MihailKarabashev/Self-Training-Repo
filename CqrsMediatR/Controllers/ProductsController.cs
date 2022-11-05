@@ -1,4 +1,5 @@
 ﻿using CqrsMediatR.Commands;
+using CqrsMediatR.Dtos.Products;
 using CqrsMediatR.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -24,7 +25,7 @@ public class ProductsController : ControllerBase
 		return Ok(products);
 	}
 
-	[HttpGet("{id}")]
+	[HttpGet("{id:int}")]
 	public async Task<IActionResult> GetProductById(int id)
 	{
 		var product = sender.Send(new GetProductByIdQuery(id));
@@ -33,7 +34,7 @@ public class ProductsController : ControllerBase
 	}
 
 	[HttpPost]
-	public async Task<IActionResult> AddProduct([FromBody] Product product)
+	public async Task<IActionResult> AddProduct([FromBody] ProductInputModel product)
 	{
 		await sender.Send(new AddProductCommand(product));
 
