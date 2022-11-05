@@ -1,5 +1,6 @@
-﻿using MediatR;
+﻿using CqrsMediatR.Dtos.Products;
+using MediatR;
 
 namespace CqrsMediatR.Queries;
 
-public record GetProductByIdQuery(int Id) : IRequest<Product>;
+public record GetProductByIdQuery(int Id) : IRequest<ProductResponseModel>;

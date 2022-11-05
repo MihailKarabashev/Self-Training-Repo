@@ -28,7 +28,7 @@ public class ProductsController : ControllerBase
 	[HttpGet("{id:int}")]
 	public async Task<IActionResult> GetProductById(int id)
 	{
-		var product = sender.Send(new GetProductByIdQuery(id));
+		var product = await sender.Send(new GetProductByIdQuery(id));
 
 		return Ok(product);
 	}
