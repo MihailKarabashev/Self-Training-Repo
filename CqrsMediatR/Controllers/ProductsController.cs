@@ -1,5 +1,5 @@
-﻿using CqrsMediatR.Queries;
-using CqrsMediatR.Queries.Commands;
+﻿using CqrsMediatR.Commands;
+using CqrsMediatR.Queries;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,6 +22,14 @@ public class ProductsController : ControllerBase
 		var products = await sender.Send(new GetProductsQuery());
 
 		return Ok(products);
+	}
+
+	[HttpGet("{id}")]
+	public async Task<IActionResult> GetProductById(int id)
+	{
+		var product = sender.Send(new GetProductByIdQuery(id));
+
+		return Ok(product);
 	}
 
 	[HttpPost]

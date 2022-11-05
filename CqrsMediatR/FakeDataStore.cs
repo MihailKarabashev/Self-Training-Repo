@@ -21,6 +21,13 @@ public class FakeDataStore
         await Task.CompletedTask;
     }
 
+    public async Task<Product?> GetById(int id)
+    {
+        var product = products.FirstOrDefault(x => x.Id == id);
+
+        return await Task.FromResult(product);
+    }
+
     public async Task<IEnumerable<Product>> GetAllProducts()
     {
         return await Task.FromResult(products);

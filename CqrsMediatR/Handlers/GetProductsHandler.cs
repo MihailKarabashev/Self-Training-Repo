@@ -1,6 +1,7 @@
-﻿using MediatR;
+﻿using CqrsMediatR.Queries;
+using MediatR;
 
-namespace CqrsMediatR.Queries.Handlers;
+namespace CqrsMediatR.Handlers;
 
 public class GetProductsHandler : IRequestHandler<GetProductsQuery, IEnumerable<Product>>
 {

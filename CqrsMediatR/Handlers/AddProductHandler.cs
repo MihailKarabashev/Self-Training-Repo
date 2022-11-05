@@ -1,6 +1,7 @@
-﻿using MediatR;
+﻿using CqrsMediatR.Commands;
+using MediatR;
 
-namespace CqrsMediatR.Queries.Commands.Handlers;
+namespace CqrsMediatR.Handlers;
 
 public class AddProductHandler : IRequestHandler<AddProductCommand>
 {
