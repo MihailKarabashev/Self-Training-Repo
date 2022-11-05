@@ -1,4 +1,5 @@
 ﻿using CqrsMediatR.Queries;
+using CqrsMediatR.Queries.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,6 +22,14 @@ public class ProductsController : ControllerBase
 		var products = await sender.Send(new GetProductsQuery());
 
 		return Ok(products);
-	} 
+	}
+
+	[HttpPost]
+	public async Task<IActionResult> AddProduct([FromBody] Product product)
+	{
+		await sender.Send(new AddProductCommand(product));
+
+		return StatusCode(201);
+	}
 
 }
