@@ -4,33 +4,7 @@ namespace AdvancedLINQ.GroupBy;
 
 public class GroupByTest
 {
-   private static readonly List<Employee> employees = new List<Employee>
-   {
-    new Employee
-    {
-        EmployeeId = 1,
-        Name = "EmployeeName 1",
-        Department = "Sales",
-        Salary = 55000.00
-    },
-    new Employee
-    {
-        EmployeeId = 3,
-        Name = "EmployeeName 3",
-        Department = "Sales",
-        Salary = 25000.00
-    },
-    new Employee
-    {
-        EmployeeId = 2,
-        Name = "EmployeeName 2",
-        Department = "Engineering",
-        Salary = 65000.00
-    },
-   };
-
-
-    public static string GroupByCriteria()
+    public static string GroupByCriteria(List<Employee> employees)
     {
         var strBuilder = new StringBuilder();
 
@@ -50,7 +24,7 @@ public class GroupByTest
         return strBuilder.ToString().TrimEnd();
     }
 
-    public static string GroupEmployeesByDepartment()
+    public static string GroupEmployeesByDepartment(List<Employee> employees)
     {
         var strBuilder = new StringBuilder();
         var result = employees
@@ -70,7 +44,7 @@ public class GroupByTest
         return strBuilder.ToString().TrimEnd();
     }
 
-    public static string GroupEmployeesByDepartmentAndSalary()
+    public static string GroupEmployeesByDepartmentAndSalary(List<Employee> employees)
     {
         var strBuilder = new StringBuilder();
 
