@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Singleton", "Singleton", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Singleton\Logger\Logger.csproj", "{966DDB39-E92D-48CE-9160-6135C300F3BE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SimpleFactory", "SimpleFactory", "{2BF50BB2-FC0A-4058-BB68-F77156C5D157}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop", "SimpleFactory\CoffeeShop\CoffeeShop.csproj", "{3EC06BE3-0B41-4A4C-9B08-F9D8E71839D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{966DDB39-E92D-48CE-9160-6135C300F3BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{966DDB39-E92D-48CE-9160-6135C300F3BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{966DDB39-E92D-48CE-9160-6135C300F3BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC06BE3-0B41-4A4C-9B08-F9D8E71839D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC06BE3-0B41-4A4C-9B08-F9D8E71839D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC06BE3-0B41-4A4C-9B08-F9D8E71839D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC06BE3-0B41-4A4C-9B08-F9D8E71839D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{966DDB39-E92D-48CE-9160-6135C300F3BE} = {6BC61982-9784-4F53-A621-00B7CAF5E22B}
+		{3EC06BE3-0B41-4A4C-9B08-F9D8E71839D1} = {2BF50BB2-FC0A-4058-BB68-F77156C5D157}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D724FDB8-BDCA-4BDF-B2AC-813D03F3F9F4}

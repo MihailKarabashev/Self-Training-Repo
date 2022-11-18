@@ -26,4 +26,9 @@ public sealed class Logger
 
         return _instance;
     }
+
+    public void Ss()
+    {
+        Console.WriteLine("Hi");
+    }
 }
