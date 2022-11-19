@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FactoryMethod", "FactoryMet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentTypes", "FactoryMethod\DocumentTypes\DocumentTypes.csproj", "{6BDACB38-E2C2-42AC-A32D-020CD0DD1282}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AbstractFactory", "AbstractFactory", "{654A0DFB-A805-4FA7-B8F8-41CCEE1A1433}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeShop", "AbstractFactory\CoffeeShop\CoffeeShop.csproj", "{B6FFBDE1-9151-428F-A865-4C3694B0E427}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{6BDACB38-E2C2-42AC-A32D-020CD0DD1282}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BDACB38-E2C2-42AC-A32D-020CD0DD1282}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BDACB38-E2C2-42AC-A32D-020CD0DD1282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6FFBDE1-9151-428F-A865-4C3694B0E427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6FFBDE1-9151-428F-A865-4C3694B0E427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6FFBDE1-9151-428F-A865-4C3694B0E427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6FFBDE1-9151-428F-A865-4C3694B0E427}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,6 +56,7 @@ Global
 		{3EC06BE3-0B41-4A4C-9B08-F9D8E71839D1} = {2BF50BB2-FC0A-4058-BB68-F77156C5D157}
 		{E2C71377-4373-4B9B-BDCB-DDF841EAF11C} = {2BF50BB2-FC0A-4058-BB68-F77156C5D157}
 		{6BDACB38-E2C2-42AC-A32D-020CD0DD1282} = {4458DDEC-C1F4-44B7-8400-506BEEF9572B}
+		{B6FFBDE1-9151-428F-A865-4C3694B0E427} = {654A0DFB-A805-4FA7-B8F8-41CCEE1A1433}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D724FDB8-BDCA-4BDF-B2AC-813D03F3F9F4}
