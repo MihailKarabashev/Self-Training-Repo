@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facade", "Facade", "{B3D49E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Garage", "Facade\Garage\Garage.csproj", "{DACAEBC2-BA39-43DF-A3CF-56DEF2FAFA10}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{C377F660-CCF3-428B-A0A4-CACE9DA10AD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cafeteria", "Adapter\Cafeteria\Cafeteria.csproj", "{52C01203-1841-4343-996B-DD2B1BEBE008}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{DACAEBC2-BA39-43DF-A3CF-56DEF2FAFA10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DACAEBC2-BA39-43DF-A3CF-56DEF2FAFA10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DACAEBC2-BA39-43DF-A3CF-56DEF2FAFA10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52C01203-1841-4343-996B-DD2B1BEBE008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C01203-1841-4343-996B-DD2B1BEBE008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C01203-1841-4343-996B-DD2B1BEBE008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C01203-1841-4343-996B-DD2B1BEBE008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DACAEBC2-BA39-43DF-A3CF-56DEF2FAFA10} = {B3D49E9A-E93E-4919-9823-1E3EE0395D44}
+		{52C01203-1841-4343-996B-DD2B1BEBE008} = {C377F660-CCF3-428B-A0A4-CACE9DA10AD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F5C313A2-CE7C-43F1-8786-ED2E0C083C8B}
